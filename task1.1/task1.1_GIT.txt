@@ -1,0 +1,26 @@
+b274420 HEAD@{0}: commit: Deleted third screenshot
+a541327 HEAD@{1}: commit: Added third screenshot
+d2cd4d7 HEAD@{2}: commit: Added third screenshot
+c4e1927 HEAD@{3}: merge develop: Fast-forward
+25a5d36 HEAD@{4}: checkout: moving from develop to master
+c4e1927 HEAD@{5}: commit: Fixed image resolution.
+6bdc2c3 HEAD@{6}: commit (merge): Fixed conflicts.
+5ffeb4c HEAD@{7}: merge images: Fast-forward
+cd4660c HEAD@{8}: checkout: moving from styles to develop
+c814cea HEAD@{9}: commit: Changed index.html file.
+70f1e48 HEAD@{10}: checkout: moving from images to styles
+5ffeb4c HEAD@{11}: checkout: moving from develop to images
+cd4660c HEAD@{12}: checkout: moving from styles to develop
+70f1e48 HEAD@{13}: commit: Added style.css file.
+cd4660c HEAD@{14}: checkout: moving from develop to styles
+cd4660c HEAD@{15}: checkout: moving from images to develop
+5ffeb4c HEAD@{16}: commit: Changed index.html. Added images
+6caee38 HEAD@{17}: checkout: moving from develop to images
+cd4660c HEAD@{18}: checkout: moving from images to develop
+6caee38 HEAD@{19}: checkout: moving from develop to images
+cd4660c HEAD@{20}: checkout: moving from images to develop
+6caee38 HEAD@{21}: commit: Created images folder with screenshots
+cd4660c HEAD@{22}: checkout: moving from develop to images
+cd4660c HEAD@{23}: commit: Created index.html file
+25a5d36 HEAD@{24}: checkout: moving from master to develop
+25a5d36 HEAD@{25}: commit (initial): Created readme.txt file
