@@ -1,5 +1,5 @@
 # DevOps?
-DevOps - це поєднання розробки (DEV) та експлуатації (OPS). Це об'єднання людей і процесів, які постійно надають переваги клієнтам. Метою DevOps є неперервне тестування, розробка нових функцій і оновлень для підвищення надійності та безпеки, моніторинг, а також забезпечення швидкого циклу розробки програмного забезпечення.
+DevOps is a combination of development (DEV) and operation (OPS). It is an association of people and processes that constantly give benefits to customers. DevOps aims to continuously test, develop new features and updates to increase reliability and security, monitor, and provide a fast software development cycle. 
 
 # Screenshots!
 ![Screenshot1](ScreenShots/Screenshot1.png)
