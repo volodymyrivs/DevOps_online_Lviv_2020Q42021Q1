@@ -62,7 +62,8 @@ Scale up to 320 logical processors, 4TB of memory, 2,048 virtual CPUs per host, 
 Virtualization rights to run a specific number of Windows VMs without purchasing additonal licenses (2 Windows OS rights are included in Standard edition and an unlimited number are included in datacenter).
 
 
-![VAGRANT FILE](Vagrantfile)
+
+[![VAGRANTFILE](vagrant.png)](Vagrantfile)
 
 # Screenshots!
 ![Screenshot1](ScreenShots/sshot-1.png)
