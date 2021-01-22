@@ -1,0 +1,31 @@
+1. Pseudo-users have mostly UID from 1 to 999. 
+   They don't registered in the system and only need them to confirm their rights to the processes.
+2. UID-unique identifier of the user within the system.
+3. GID-unique identifier of the group within the system to which the user belongs.
+4. id [nameofuser]
+5. useradd [-m creates the new user’s home directory and copies files from /etc/skel directory to the user’s home directory.]
+6. usermod -l login-name old-name
+7. Files in skell_dir will copy to the newuser home directory(if we create new user with key -m).
+8. userdel -r
+9.-L, --lock(lock the user account),   -U, --unlock (unlock the user account)
+10. passwd --delete [username]
+11. ls -l
+12, 13. 
+	rwxrwxrwx
+	owner,group,other 
+	rwx - allrights, 
+    	--- - no rights, 
+    	--x - only execute(no modify or read),
+    	-w- - only write,
+    	r-- - only read
+    	--s - the SUID or SGID bit is set, the first is displayed in the field for the owner, the second for the group;
+    	--t - sticky-bit is set, which means users cannot delete this file.
+	So if th file is owned by root and the SUID bit is turned on, the program will run as root. 
+	Even if you execute it as a regular user. 
+	The same thing applies to the GUID bit
+
+14. chmod ugo+rwx [filename], where u-owner, g-group, o-other and r-read, w-write,x-execute
+15. Umask - user file creation mode mask that is used to configure the default permissions for newly created files and directories
+16.If Sticky bit is enabled on a folder, the folder contents are deleted by only owner who created them and the root user. 
+No one else can delete other users data in this folder(Where sticky bit is set).
+17. ugo+x
