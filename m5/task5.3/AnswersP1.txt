@@ -1,0 +1,59 @@
+1. 5-Running(R), Sleeping(S), Uninterruptable sleep(D), Stopped(S), Zombie(Z).
+2. pstree 
+		-h, --highlight-all highlight current process and its ancestors
+  		-H PID, --highlight-pid=PID highlight this process and its ancestors
+3. 	The proc filesystem is a pseudo-filesystem created on fly when system boots and is dissolved 
+		at time of system shut down and which provides an interface to kernel data structures.  
+	It is commonly mounted at /proc.  Typically, it is mounted automatically by the system, but it can 
+		also be mounted manually using a command such as: mount -t proc proc /proc .
+4. cat /proc/cpuinfo
+5.  ps -axfo user,group,pid,stat,%cpu,%mem,vsz,rss,tty,start,time,command
+6. 	User-space processes have its own virtual address space.
+	A kernel processes controls directly the kernel threads. 
+	Because kernel processes are always in the kernel protection domain, threads within a kernel process are kernel-only threads. 
+	The kernel process does not have a root directory or a current directory when initialized. 
+	And they may be started before the kernel has started any user process (e.g. init).
+7. ps aux, S-Interruptible sleep (waiting for an event to complete), 	
+	   I-is multi-threaded (using CLONE_THREAD, like NPTL pthreads do), <-high-priority (not nice to other users)
+	   N-low-priority (nice to other users)
+8. ps -u vovaivasiuk
+9. 
+	top command : Display and update sorted information about Linux processes.
+	atop command : Advanced System & Process Monitor for Linux.
+	htop command : Interactive process viewer in Linux.
+	pgrep command : Look up or signal processes based on name and other attributes.
+	pstree command : Display a tree of processes.
+10. 	The top command allows users to monitor processes and system resource usage on Linux. 
+	It is one of the most useful tools in a sysadmin’s toolbox, and it comes pre-installed on every distribution. 
+	Unlike other commands such as ps, it is interactive, and you can browse through the list of processes, kill a process, and so on.
+11.     top -u vovaivasiuk
+12.     'z' :Color/Monochrome_toggle, 'u' :Show_Specific_User_Only, 'A' :Alternate_Display_Mode_toggle, 'Z' :Change_Color_Mapping, 
+	'c' :Shows Absolute Path of Processes, ‘r‘ :Renice a Process
+13. 	ps aux --sort cputime(sort processes for cpu time (cumulated cpu usage)), 
+	ps aux --sort %cpu (sort for current cpu usage),
+	ps aux --sort %mem (sort for current RAM usage).
+14. 	Linux has140 priorities and two distinct priority ranges. 
+	The first one is a nice value (niceness) from -20 (highest priority value) to 19 (lowest priority value), default is 0. 
+	The other is the real-time priority, which ranges from 1 to 99 by default, then 100 to 139 are meant for user-space.
+	We can use nice when we want to start process and set priority, and renice to change the priority of proccess.
+15. yes, firstly we need execute top command, 
+	secondly we need to press 'r' button, 
+	thirdly we must fill PID number to renice and press 'enter,
+	lastly we must fill value on which we want to renice  and press 'enter'.
+16. 	kill <process_id> (SIGTERM)
+	kill -9 <process_id> (SIGKILL)
+	kill -signal <process_id>
+	killall in Linux is designed to "kill" all processes with the same name. 
+	This is convenient because we don't need to know the PID of the process.
+	The pkill command is used to terminate a process by name rather than ID.
+17. 	The jobs command can display a list of current background tasks
+	The fg command is designed to put the background task in normal mode
+	The bg command is intended to resume execution of a stopped task in the background.
+	With nohup, you can start a process and keep it running even after you have logged out.
+
+	   
+
+
+
+       
+
