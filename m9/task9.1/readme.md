@@ -1,6 +1,6 @@
 # Task 9.1 
 
-[![TXTFILE1](Python.png)](python/)
+[![TXTFILE1](Python.png)](python_files/)
 
 # Screenshots!
 
